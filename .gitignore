@@ -1,34 +1,24 @@
-# Prerequisites
-*.d
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# compiled output
+/client/dist/
+/client/tmp/
 
-# Precompiled Headers
-*.gch
-*.pch
+# dependencies
+/client/bower_components/
+/client/node_modules/
+/server/node_modules/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# misc
+/client/.sass-cache
+/client/connect.lock
+/client/coverage/
+/client/libpeerconnection.log
+/client/npm-debug.log*
+/client/testem.log
+/client/yarn-error.log
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-#Node Modules
+# ember-try
+/client/.node_modules.ember-try/
+/client/bower.json.ember-try
+/client/package.json.ember-try
