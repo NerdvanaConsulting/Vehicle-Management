@@ -22,3 +22,6 @@
 /client/.node_modules.ember-try/
 /client/bower.json.ember-try
 /client/package.json.ember-try
+
+#Management (non-public)
+/Requirements.ods
