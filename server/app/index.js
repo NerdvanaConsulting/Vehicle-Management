@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /************************************************
  * Application:  Vehicle Manager
  * File:  server/app/index.js
@@ -8,7 +9,6 @@
  * Modification History:
  * - 23 Dec 2018 - Initial build (no modifications)
  ***********************************************/
-#!/usr/bin/env node
 
 const blueprint = require ('@onehilltech/blueprint');
 
