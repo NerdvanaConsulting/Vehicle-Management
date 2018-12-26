@@ -20,6 +20,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('core', function() {
     this.route('dashboard');
+    this.route('vehicle-manager');
   });
 });
 
