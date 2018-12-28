@@ -11,10 +11,13 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+   type: DS.attr('string'),
    id: DS.attr('string'),
-   vin: DS.attr('string'),
-   vehMake: DS.attr('string'),
-   vehModel: DS.attr('string'),
-   vehYear: DS.attr('number'),
-   vehColor: DS.attr('string'),
+   attributes: {
+      vin: DS.attr('string'),
+      vehMake: DS.attr('string'),
+      vehModel: DS.attr('string'),
+      vehYear: DS.attr('number'),
+      vehColor: DS.attr('string'),
+   }s
 });
