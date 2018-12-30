@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=MedievalShar;');
+
+* {
+   font-family: 'Roboty', san-serif;
+   font-weight: 200;
+   color: #111111;
+   line-height: 1.1em;
+   margin: 0px 0px 0px;
+}
+
+h1, h2, h3 {
+   margin: 5px 5px 5px;
+   text-align: middle;
+}
+</style>

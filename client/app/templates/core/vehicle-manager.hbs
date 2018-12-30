@@ -1,15 +1,4 @@
 <h3>Vehicle Manager</h3>
 <div style="overscroll-behavior-y: auto">
-  {{#each model as |vehicle|}}
-   {{#vehicle-list
-     id=vehicle.id
-     vin=vehicle.vin
-     vehmake=vehicle.vehmake
-     vehmodel=vehicle.vehmodel
-     vehyear = vehicle.vehyear
-     vehcolor=vehicle.vehcolor
-     vehmileage=vehicle.vehmileage
-     vehimage=vehicle.vehimage}}
-     {{/vehicle-list}}
-  {{/each}}
+{{outlet}}
 </div>

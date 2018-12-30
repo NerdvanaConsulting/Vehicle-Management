@@ -8,6 +8,7 @@
  * Modification History:
  * - 26 Dec 2018 - Initial build (no modifications)
  * - 28 Dec 2018 - Removed id attribute 
+ * - 29 Dec 2018 - removed attribute section, to keep everything at the base level.
  ***********************************************/
 import DS from 'ember-data';
 

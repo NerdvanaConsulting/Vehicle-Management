@@ -9,9 +9,18 @@
  * - 25 Dec 2018 - Initial build
  ***********************************************/
 import Component from '@ember/component';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
+   router: service(),
    init() {
       this._super(...arguments);
+   },
+
+   click() {
+      this.get('router').transitionTo('/core/vehicle-manager/vehicles/' + this.id);
+    },
+   actions: {
+
    }
 });

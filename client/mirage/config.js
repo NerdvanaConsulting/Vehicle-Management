@@ -10,13 +10,15 @@
  * - 29 Dec 2018 - Added additional attributes for image/year/mileage
  ***********************************************/
 export default function() {
+  
   this.namespace = '/api';
 
-  this.get('/vehicles', function() {
-    return {
-      data: [{
+  let vehicles = [{
+//  this.get('/vehicles', function() {
+//    return {
+//      data: [{
         type: 'vehicle',
-        id: 1,
+        id: '1',
         attributes: {
           vin: '41C8H6G2VB8930212',
           vehmake: 'Ford',
@@ -28,7 +30,7 @@ export default function() {
         }
       },{
         type: 'vehicle',
-        id: 2,
+        id: '2',
         attributes: {
           vin: '53C8I6G2VC9930284',
           vehmake: 'Chevrolet',
@@ -40,7 +42,7 @@ export default function() {
         }
       },{
         type: 'vehicle',
-        id: 3,
+        id: '3',
         attributes: {
           vin: '97D8I6G2VC3530209',
           vehmake: 'Porsche',
@@ -52,7 +54,7 @@ export default function() {
         }
       },{
         type: 'vehicle',
-        id: 4,
+        id: '4',
         attributes: {
           vin: '97D8I6G2VC3530209',
           vehmake: 'BMW',
@@ -62,13 +64,22 @@ export default function() {
           vehmileage: 1200,
           vehimage: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2017_Nissan_LEAF_%28ZE0_MY17%29_hatchback_%282018-11-02%29_01.jpg'
         }
-      }]
-    };
-  });
-  this.get('/vehicles/:id', function() {});
-  this.post('/vehicles', function() {});
-  this.put('/vehicles/:id', function() {});
-  this.del('/vehicles/:id', function() {});
+      }];
+    
+      this.get('/vehicles', function(db, request) {
+        if(request.queryParams.id !== undefined) {
+          let filteredVehicles = vehicles.filter(function(i) {
+            return i.attributes.id.indexOf(request.queryParams.id) !== -1;
+          });
+          return { data: filteredVehicles };
+        } else {
+          return { data: vehicles };
+        }
+      });
+
+      this.get('/vehicles/:id', function(db , request) {
+        return { data: vehicles.find((vehicle) => request.params.id === vehicle.id) };
+      });
 
 
   // These comments are here to help you get started. Feel free to delete them.
