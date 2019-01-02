@@ -1,6 +1,6 @@
 <article class="vehicle-list">
-<div width="100%">
-<table style="border: 1px solid black" align="center" width="90%">
+<div class="mdc-card mdc-elevation--z5">
+<table align="center" width="90%">
    <thead>
       <tr>
          <th colspan="3">{{vehyear}} {{vehmake}} {{vehmodel}}</th>
@@ -9,10 +9,10 @@
    <tbody>
       <tr>
          <td rowspan="2"><img src={{vehimage}} height=64 alt=""></td>
-         <td rowspan="1">Color</td><td>Mileage</td>
+         <td rowspan="1">Color</td><td>{{vehcolor}}</td>
       </tr>
       <tr>
-         <td>{{vehcolor}}</td><td>{{vehmileage}}</td>
+         <td>Mileage</td><td>{{vehmileage}}</td>
       </tr>
    </tbody>
 </table>
