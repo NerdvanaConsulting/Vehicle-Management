@@ -64,6 +64,30 @@ export default function() {
           vehmileage: 1200,
           vehimage: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2017_Nissan_LEAF_%28ZE0_MY17%29_hatchback_%282018-11-02%29_01.jpg'
         }
+      },{
+        type: 'vehicle',
+        id: '5',
+        attributes: {
+          vin: 'JM3I6G2VC3530209',
+          vehmake: 'Peterbilt',
+          vehmodel: 'Big rig 18',
+          vehyear: '2018',
+          vehcolor: 'Steel Blue',
+          vehmileage: 15000,
+          vehimage: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2017_Nissan_LEAF_%28ZE0_MY17%29_hatchback_%282018-11-02%29_01.jpg'
+        }
+      },{
+        type: 'vehicle',
+        id: '6',
+        attributes: {
+          vin: '53KI6G2VC3539999',
+          vehmake: 'Lamborghini',
+          vehmodel: 'Countach',
+          vehyear: '2018',
+          vehcolor: 'Steel Blue',
+          vehmileage: 350000,
+          vehimage: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2017_Nissan_LEAF_%28ZE0_MY17%29_hatchback_%282018-11-02%29_01.jpg'
+        }
       }];
     
       this.get('/vehicles', function(db, request) {
