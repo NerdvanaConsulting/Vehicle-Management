@@ -1,37 +1,32 @@
 <article class="vehicle">
-<div width="100%">
-<table style="border: 1px solid black" align="center" width="90%">
-   <thead>
-      <tr>
-         <th colspan="2">Vehicle Details</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Year</td>
-         <td>{{model.vehyear}}</td>
-      </tr>
-      <tr>
-         <td>Make</td>
-         <td>{{model.vehmake}}</td>
-      </tr>
-      <tr>
-         <td>Model</td>
-         <td>{{model.vehmodel}}</td>
-      </tr>
-      <tr>
-         <td>Color</td>
-         <td>{{model.vehcolor}}</td>
-      </tr>
-      <tr>
-         <td>Mileage</td>
-         <td>{{model.vehmileage}}</td>
-      </tr>
-      <tr>
-         <td colspan="2"><img src={{model.vehimage}} height=64 alt="{{id}}"></td>
-      </tr>
-   </tbody>
-</table>
+<div width="100%" class="mdc-card mdc-elevation--z5">
+   <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+         <div class="med-card__media">
+            <div class="mdc-card__media-content"><img src={{model.vehimage}} height="128" alt="{{id}}"></div>
+         </div>
+      </div>
+      <div class="mdc-layout-grid__inner">
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">Year</div>
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-elevation--z0">{{model.vehyear}}</div>
+      </div>
+      <div class="mdc-layout-grid__inner">
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">Make</div>
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-elevation--z0">{{model.vehmake}}</div>
+      </div>
+      <div class="mdc-layout-grid__inner">
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">Model</div>
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-elevation--z0">{{model.vehmodel}}</div>
+      </div>
+      <div class="mdc-layout-grid__inner">
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">Color</div>
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-elevation--z0">{{model.vehcolor}}</div>
+      </div>
+      <div class="mdc-layout-grid__inner">
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">Mileage</div>
+         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2  mdc-elevation--z0">{{model.vehmileage}}</div>
+      </div>
+   </div>
 </div>
 </article>
 {{outlet}}

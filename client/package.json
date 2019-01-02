@@ -20,6 +20,28 @@
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
     "@ember/optional-features": "^0.6.3",
+    "@material/animation": "^0.3.1",
+    "@material/base": "^0.2.5",
+    "@material/button": "^0.5.0",
+    "@material/card": "^0.2.7",
+    "@material/checkbox": "^0.4.5",
+    "@material/drawer": "^0.5.9",
+    "@material/elevation": "^0.1.11",
+    "@material/fab": "^0.3.16",
+    "@material/form-field": "^0.2.14",
+    "@material/grid-list": "^0.2.13",
+    "@material/icon-toggle": "^0.1.19",
+    "@material/layout-grid": "^0.4.4",
+    "@material/linear-progress": "^0.1.8",
+    "@material/list": "^0.2.17",
+    "@material/menu": "^0.4.5",
+    "@material/radio": "^0.2.12",
+    "@material/ripple": "^0.8.6",
+    "@material/switch": "^0.1.12",
+    "@material/tabs": "^0.3.0",
+    "@material/textfield": "^0.3.6",
+    "@material/theme": "^0.2.0",
+    "@material/toolbar": "^0.4.7",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
     "ember-cli": "~3.4.3",
@@ -38,6 +60,7 @@
     "ember-data": "~3.4.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.1.0",
+    "ember-material-components-web": "0.0.40",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.4.0",
@@ -48,5 +71,8 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "material-components-web": "^0.42.1"
   }
 }
