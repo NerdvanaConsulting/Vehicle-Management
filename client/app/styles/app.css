@@ -5,6 +5,10 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=MedievalShar;');
 @import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/button/mdc-switch";
+@import "@material/button/mdc-drawer";
+
 @import "@material/layout-grid/mdc-layout-grid";
 
 * {
