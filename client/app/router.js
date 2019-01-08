@@ -21,7 +21,7 @@ Router.map(function() {
   this.route('core', function() {
     this.route('dashboard');
     this.route('vehicle-manager', function() {
-      this.route('list-view', {path: '/core/vehicle-manager/list-view'});
+      this.route('list-view');
       this.route('vehicles', { path: '/vehicles/:id'});
     });
   });
