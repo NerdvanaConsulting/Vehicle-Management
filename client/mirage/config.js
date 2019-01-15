@@ -88,26 +88,61 @@ export default function() {
           vehmileage: 350000,
           vehimage: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2017_Nissan_LEAF_%28ZE0_MY17%29_hatchback_%282018-11-02%29_01.jpg'
         }
-      }];
+  }];
     
-      this.get('/vehicles', function(db, request) {
-        if(request.queryParams.id !== undefined) {
-          let filteredVehicles = vehicles.filter(function(i) {
-            return i.attributes.id.indexOf(request.queryParams.id) !== -1;
-          });
-          return { data: filteredVehicles };
-        } else {
-          return { data: vehicles };
-        }
+  this.get('/vehicles', function(db, request) {
+    if(request.queryParams.id !== undefined) {
+      let filteredVehicles = vehicles.filter(function(i) {
+        return i.attributes.id.indexOf(request.queryParams.id) !== -1;
       });
+      return { data: filteredVehicles };
+    } else {
+      return { data: vehicles };
+    }
+  });
 
-      this.get('/vehicles/:id', function(db , request) {
-        return { data: vehicles.find((vehicle) => request.params.id === vehicle.id) };
-      });
+  this.get('/vehicles/:id', function(db , request) {
+    return { data: vehicles.find((vehicle) => request.params.id === vehicle.id) };
+  });
 
 
   // These comments are here to help you get started. Feel free to delete them.
 
+  let fillups = [
+    {
+      type: 'fillup',
+      id: '1',
+      attributes: {
+        filldate: '01/01/2019',
+        mileage: 36000,
+        trip: 340,
+        amount: 12.9,
+        rate: 2.079,
+        total: 26.81,
+        mpg: 26.35,
+        vehicle: '1'
+      }
+    },{
+
+        
+    }];
+
+    this.get('/fillups', function(db, request) {
+      if(request.queryParams.id !== undefined) {
+        let filteredFillups = fillups.filter(function(i) {
+          return i.attributes.vehicle.indexOf(request.queryParams.id) !== -1;
+        })
+        return { data: filteredFillups };
+      } else {
+        return {data: fillups };
+      }
+    });
+    this.get('/fillups/:vehicle', function(db, request) {
+      return { data: fillups.find((fillup) => request.params.vehicle = vehicle) };
+    })
+    this.get('/fillups/:id', function(db, request) {
+      return { data: fillups.find((fillup) => request.params.id = fillup.id) };
+    })
 
   // this.urlPrefix = '';    // make this `http://localhost:8080`, for example, if your API is on a different server
   // this.namespace = '';    // make this `/api`, for example, if your API is namespaced
