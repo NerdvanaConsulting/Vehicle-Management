@@ -1,11 +1,11 @@
-@charset "utf-8";
-/* CSS Document */
 
-
-<style>
 @import url('https://fonts.googleapis.com/css?family=MedievalShar;');
-@import "@material/card/mdc-card";
 @import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/button/mdc-switch";
+@import "@material/button/mdc-drawer";
+
 
 * {
    font-family: 'Roboty', san-serif;
@@ -20,4 +20,6 @@ h1, h2, h3 {
    text-align: middle;
 }
 
-</style>
+.my-scrollable-card .mdc-card {
+   height: 120px;
+}
