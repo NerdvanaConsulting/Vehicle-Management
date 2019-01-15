@@ -1,21 +1,17 @@
 <h3>Dashboard Route</h3>
-<div class="grid-dash-container">
-   <div class="mdc-card">
-      {{#link-to "core.vehicle-manager.list-view" class="button"}}<button>Vehicles</button>{{/link-to}}
-   </div>
-   <div>
-      <button {{action "showVehicles" target=list-view}} class="mdc-button mdc-button--raised">Fuel / Fill-ups</button>
-   </div>
-   <div>
-      <button class="mdc-button mdc-button--theme-light mdc-button--raised">Trips</button>
-   </div>
-   <div>
-      <button class="mdc-button mdc-button--raised">Maintenance</button>
-   </div>
-   <div class="button-container">
-      <button type="button" class="mdc-button cancel">Cancel</button>
-      <button class="mdc-button mdc-button--raised next">Next</button>
-   </div>
+<div class="route__core-dashboard">
+   {{#link-to "core.vehicle-manager.list-view"}}
+   <div class="gc-dash"><img src={{car.jpg}} height="80" alt="Vehicles"></div>
+   {{/link-to}}
+   {{#link-to "core.vehicle-manager.list-view"}}
+   <div class="gc-dash"><img src={{car.jpg}} height="80" alt="Fuel / Fill-ups"></div>
+   {{/link-to}}
+   {{#link-to "core.vehicle-manager.list-view"}}
+   <div class="gc-dash"><img src={{car.jpg}} height="80" alt="Trips"></div>
+   {{/link-to}}
+   {{#link-to "core.vehicle-manager.list-view"}}
+   <div class="gc-dash"><img src={{car.jpg}} height="80" alt="Maintenance and Repairs"></div>
+   {{/link-to}}
 </div>
 
 {{outlet}}

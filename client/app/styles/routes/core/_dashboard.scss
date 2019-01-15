@@ -1,5 +1,37 @@
 // route: core/dashboard
 
 .route__core-dashboard {
+    .gc-dash {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 96px;
+        flex-direction: row;
+        overflow: hidden;
+              -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding: 8;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        vertical-align: center;
+        background-color: rgba(1, 50, 94, 0.5);
+        border: 1px solid #888888;
+        border-radius: 2px;
+        -webkit-box-shadow: 0px 6px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 6px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
 
+    .gc-dash:hover {
+        background-color: #009999;
+        color: white;
+    }
 }
