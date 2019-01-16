@@ -1,16 +1,12 @@
 <article class="fillup-list">
 <div class="mdc-card mdc-elevation--z5">
-<table align="center" width="90%">
-   <thead>
-      <tr>
-         <th colspan="3">{{filldate}} {{mileage}} {{mpg}} {{veh}}</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="1">{{trip}}</td><td>{{amount}}</td>
-      </tr>
-   </tbody>
-</table>
+<div class="gc-fillup-list">
+   <div class="label">Fill-Up Date</div>
+   <div class="label">Mileage</div>
+   <div class="label">Trip Miles</div>
+   <div class="data">{{filldate}}</div><div class="data">{{mileage}}</div><div class="data">{{trip}}</div>
+   <div class="label">Fill Amount</div><div class="label">Total Cost</div><div class="label">MPG</div>
+   <div class="data">{{amount}}</div><div class="data">{{total}}</div><div class="data">{{mpg}}</div>
+</div>
 </div>
 </article>
