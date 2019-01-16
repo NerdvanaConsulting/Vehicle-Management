@@ -139,11 +139,15 @@ export default function() {
     });
     this.get('/fillups/:vehicle', function(db, request) {
       return { data: fillups.find((fillup) => request.params.vehicle = vehicle) };
-    })
+    });
     this.get('/fillups/:id', function(db, request) {
       return { data: fillups.find((fillup) => request.params.id = fillup.id) };
-    })
+    });
 
+    //THis is a test to see if I can serve images with a get to that location.
+    this.get('/public/assets/images', function(db, request) {
+      return { data: request };
+    });
   // this.urlPrefix = '';    // make this `http://localhost:8080`, for example, if your API is on a different server
   // this.namespace = '';    // make this `/api`, for example, if your API is namespaced
   // this.timing = 400;      // delay for each request, automatically set to 0 during testing
