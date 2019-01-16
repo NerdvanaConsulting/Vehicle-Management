@@ -15,7 +15,7 @@ export default DS.Model.extend({
    mileage: DS.attr('number'),
    trip: DS.attr('number'),
    amount: DS.attr('number'),
-   costper: DS.attr('number'),
+   rate: DS.attr('number'),
    total: DS.attr('number'),
    mpg: DS.attr('number'),
    vehicle: DS.belongsTo('vehicle')
