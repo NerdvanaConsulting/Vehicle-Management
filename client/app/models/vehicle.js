@@ -21,5 +21,5 @@ export default DS.Model.extend({
    vehcolor: DS.attr('string'),
    vehmileage: DS.attr('number'),
    vehimage: DS.attr(''),
-   fuelhistory: DS.hasMany('fillup')
+   fillup: DS.hasMany('fillup')
 });

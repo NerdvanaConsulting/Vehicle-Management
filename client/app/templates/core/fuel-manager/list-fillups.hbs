@@ -2,6 +2,7 @@
 {{#each model as |fillup|}}
   {{#fillup-list
     id=fillup.id
+    veh = fillup.vehicle.id
     filldate = fillup.filldate
     mileage = fillup.mileage
     trip = fillup.trip
@@ -9,7 +10,7 @@
     rate = fillup.rate
     total = fillup.total
     mpg = fillup.mpg
-    vehimage=vehicle.vehimage}}
+    vehname = fillup.vehicle.make}}
    {{/fillup-list}}
 {{/each}}
 </div>

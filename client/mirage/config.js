@@ -14,9 +14,6 @@ export default function() {
   this.namespace = '/api';
 
   let vehicles = [{
-//  this.get('/vehicles', function() {
-//    return {
-//      data: [{
         type: 'vehicle',
         id: '1',
         attributes: {
@@ -123,8 +120,70 @@ export default function() {
         vehicle: '1'
       }
     },{
-
-        
+      type: 'fillup',
+      id: '2',
+      attributes: {
+        filldate: '01/03/2019',
+        mileage: 36500,
+        trip: 500,
+        amount: 13.9,
+        rate: 2.059,
+        total: 28.62,
+        mpg: 35.97,
+        vehicle: '2'
+      }        
+    },{
+      type: 'fillup',
+      id: '3',
+      attributes: {
+        filldate: '01/03/2019',
+        mileage: 36500,
+        trip: 500,
+        amount: 13.9,
+        rate: 2.059,
+        total: 28.62,
+        mpg: 35.97,
+        vehicle: '2'
+      }        
+    },{
+      type: 'fillup',
+      id: '4',
+      attributes: {
+        filldate: '01/05/2019',
+        mileage: 36500,
+        trip: 500,
+        amount: 13.9,
+        rate: 2.059,
+        total: 28.62,
+        mpg: 35.97,
+        vehicle: '4'
+      }        
+    },{
+      type: 'fillup',
+      id: '5',
+      attributes: {
+        filldate: '01/06/2019',
+        mileage: 37000,
+        trip: 500,
+        amount: 13.9,
+        rate: 2.059,
+        total: 28.62,
+        mpg: 35.97,
+        vehicle: '3'
+      }        
+    },{
+      type: 'fillup',
+      id: '6',
+      attributes: {
+        filldate: '01/07/2019',
+        mileage: 37500,
+        trip: 500,
+        amount: 13.9,
+        rate: 2.059,
+        total: 28.62,
+        mpg: 35.97,
+        vehicle: '4'
+      }        
     }];
 
     this.get('/fillups', function(db, request) {

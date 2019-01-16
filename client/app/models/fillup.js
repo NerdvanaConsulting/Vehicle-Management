@@ -11,6 +11,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+   vehicle: DS.belongsTo('vehicle'),
    filldate: DS.attr('string'),
    mileage: DS.attr('number'),
    trip: DS.attr('number'),
@@ -18,5 +19,4 @@ export default DS.Model.extend({
    rate: DS.attr('number'),
    total: DS.attr('number'),
    mpg: DS.attr('number'),
-   vehicle: DS.belongsTo('vehicle')
 });
