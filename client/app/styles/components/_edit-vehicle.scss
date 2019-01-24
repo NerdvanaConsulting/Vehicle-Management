@@ -1,0 +1,30 @@
+// route: edit-vehicle
+
+.edit-vehicle {
+   .gc-edit-form {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 1px;
+      grid-row-gap: 2px;
+      background-color: #4b5c6d;
+   }
+   .gc-fillup-list > div {
+      border-color: aqua;
+      text-align: center;
+   }
+   .label {
+      font-size: 0.8em;
+      background-color: rgba($color: #00dddd, $alpha: 1.0);
+      align-content: center;
+      color: #001111;
+      font-size: 1.5em;
+//      grid-column-start: 1;
+//      grid-column-end: 2;
+   }
+   .data {
+      font-size: 1.5em;
+      background-color: rgba($color: #AAA, $alpha: 1.0);
+//      grid-column-start: 2;
+//      grid-column-end: 3;
+   }
+}

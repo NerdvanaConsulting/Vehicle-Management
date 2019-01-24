@@ -102,6 +102,10 @@ export default function() {
     return { data: vehicles.find((vehicle) => request.params.id === vehicle.id) };
   });
 
+  this.get('/edit-vehicle/:id', function(db , request) {
+    return { data: vehicles.find((vehicle) => request.params.id === vehicle.id) };
+  });
+
 
   // These comments are here to help you get started. Feel free to delete them.
 
