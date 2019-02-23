@@ -1,11 +1,13 @@
 <article class="vehicle">
-<div width="100%" class="mdc-card mdc-card--theme-dark mdc-elevation--z5">
+<div width="100%" class="mdc-card mdc-card--theme-dark mdc-elevation--z5" id="{{id}}">
    <div class="mdc-layout-grid">
+{{#link-to '/vehicle-manager.edit-vehicle'  this.id}}
       <div class="mdc-layout-grid__inner">
          <div class="med-card__media">
             <div class="mdc-card__media-content"><img src={{model.vehimage}} height="128" alt="{{id}}"></div>
          </div>
       </div>
+{{/link-to}}
       <div class="mdc-layout-grid__inner">
          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">Year</div>
          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-elevation--z0">{{model.vehyear}}</div>

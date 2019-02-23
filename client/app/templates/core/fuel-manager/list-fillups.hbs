@@ -1,1 +1,17 @@
-{{outlet}}
+<h3>Fill-Up List</h3>
+<div class="mdc-card">
+{{#each model as |fillup|}}
+  {{#fillup-list
+    id=fillup.id
+    veh = fillup.vehicle.id
+    filldate = fillup.filldate
+    mileage = fillup.mileage
+    trip = fillup.trip
+    amount = fillup.amount
+    rate = fillup.rate
+    total = fillup.total
+    mpg = fillup.mpg
+    vehname = fillup.vehicle.make}}
+   {{/fillup-list}}
+{{/each}}
+</div>

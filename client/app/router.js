@@ -23,6 +23,7 @@ Router.map(function() {
     this.route('vehicle-manager', function() {
       this.route('list-view');
       this.route('vehicles', { path: '/vehicles/:id'});
+      this.route('edit-vehicle', { path: '/edit-vehicle/:id'});
     });
     this.route('fuel-manager', function() {
       this.route('list-fillups');

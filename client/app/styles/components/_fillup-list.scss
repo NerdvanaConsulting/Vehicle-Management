@@ -1,0 +1,27 @@
+// route: fillup-list
+
+.fillup-list {
+   border: 2px solid black;
+   padding: 2px;
+   .gc-fillup-list {
+      display: grid;
+      grid-template-columns: 33% 34% 33%;
+      grid-column-gap: 1px;
+      grid-row-gap: 2px;
+      background-color: #4b5c6d;
+   }
+   .gc-fillup-list > div {
+      border-color: aqua;
+      text-align: center;
+   }
+   .label {
+      font-size: 0.8em;
+      background-color: rgba($color: #008888, $alpha: 1.0);
+      align-content: center;
+      color: white;
+   }
+   .data {
+      font-size: 1.0em;
+      background-color: rgba($color: #AAA, $alpha: 1.0);
+   }
+}

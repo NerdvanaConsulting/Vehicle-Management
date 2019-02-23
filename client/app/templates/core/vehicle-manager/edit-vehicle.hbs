@@ -1,0 +1,20 @@
+<article class="edit-vehicle">
+<div class="mdc-card mdc-theme--dark">
+<h3>Edit vehicle details</h3>
+<div class="gc-edit-form">
+         <div class="label">VIN ({{model.vehvin}})</div>
+         <div class="data">{{input class="input" value=vin placeholder="Vehicle ID Number"}}</div>
+         <div class="label">Year ({{model.vehyear}})</div>
+         <div class="data">{{input class="input" value=vehyear placeholder="Year"}}</div>
+         <div class="label">Make ({{model.vehmake}})</div>
+         <div class="data">{{input class="input" value=vehmake placeholder="Vehicle Make"}}</div>
+         <div class="label">Model ({{model.vehmodel}})</div>
+         <div class="data">{{input class="input" value=vehmodel placeholder="Vehicle Model"}}</div>
+         <div class="label">Color ({{model.vehcolor}})</div>
+         <div class="data">{{input class="input" value=vehcolor placeholder="Vehicle Color"}}</div>
+         <div class="label">Mileage ({{model.vehmileage}})</div>
+         <div class="data">{{input class="input" value=vehmileage placeholder="Mileage"}}</div>
+</div>
+</div>
+</article>
+{{outlet}}
