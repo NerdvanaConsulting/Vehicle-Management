@@ -4,7 +4,7 @@
 
 | Branch | Purpose | Merges into | Accepts Merges from | Remarks |
 |-------|--------|---------|----------|-------|
-|master|Release/Production| | Pre-release Testing | Production / release branch - ONLY stable commits|
+|master|Release/Production| | Pre-release Testing, hotfix | Production / release branch - ONLY stable commits|
 |hotfix|Errors / Bugs| development, master|master| This branch is strictly for issues that arise / are identified within tagged releases|
 |development| Main development build line |features, pre-release |master, pre-release, features | Anything committed to this branch must build, although it may not be stable. |
 |feature-X| Major application features |issues, development |development, issues | features must be buildable prior to merging into development. |
